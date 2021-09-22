@@ -28,7 +28,9 @@ export default {
   components: {
     dirs: [
       './components',
-      './components/home'
+      './components/home',
+      './components/store',
+      './components/gift'
     ]
   },
 

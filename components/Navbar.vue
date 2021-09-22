@@ -4,8 +4,8 @@
       <p class="float-left"> 0xp </p>
       <b-nav align="center">
         <nuxt-link to="/"> Home </nuxt-link>
-        <nuxt-link to="/"> Store </nuxt-link>
-        <nuxt-link to="/"> Gift </nuxt-link>
+        <nuxt-link to="/store"> Store </nuxt-link>
+        <nuxt-link to="/gift"> Gift </nuxt-link>
       </b-nav>
     </div>
   </div>
