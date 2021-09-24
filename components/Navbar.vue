@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <p class="float-left"> 0xp </p>
+      <p class="float-left"> {{ xp }}xp </p>
       <b-nav align="center">
         <nuxt-link to="/"> Home </nuxt-link>
         <nuxt-link to="/store"> Store </nuxt-link>
@@ -10,6 +10,26 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      xp: null
+    }
+  },
+  methods: {
+    async getXp () {
+      const req = await fetch('http://localhost:3004/myxp')
+      const data = await req.json()
+      this.xp = data.xp
+    }
+  },
+  mounted () {
+    this.getXp()
+  }
+}
+</script>
 
 <style scoped>
 div {

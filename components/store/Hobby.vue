@@ -3,7 +3,7 @@
     <h1 class="text-center">S T O R E</h1>
     <b-container class="bv-example-row">
       <b-row>
-        <b-col cols="6" class="mt-5" v-for="gift in store" :key="gift.id">
+        <b-col cols="6" class="mt-5 border" v-for="gift in store" :key="gift.id">
           <h1 class="text-center">{{ gift.name }}</h1>
           <p class="text-center">{{ gift.value }}xp</p>
           <div class="text-center">
@@ -32,3 +32,10 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.border {
+  border: 1px solid #000;
+  padding:10px 0;
+}
+</style>

@@ -1,0 +1,21 @@
+{
+  "tasks": [
+    {
+      "title": "Javascript",
+      "id": 1
+    }
+  ],
+  "gifts": [
+    {
+      "id": 1,
+      "name": "1d folga"
+    },
+    {
+      "id": 2,
+      "name": "Serie"
+    }
+  ],
+  "myxp": {
+    "xp": 10
+  }
+}
