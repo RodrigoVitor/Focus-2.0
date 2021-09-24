@@ -18,14 +18,8 @@ export default {
     }
   },
   methods: {
-    async getTasks () {
-      const req = await fetch('http://localhost:3004/tasks')
-      const data = await req.json()
-      return data
-    },
     async addList () {
       // e.preventDefault()
-
       if (this.task !== null) {
         const data = {
           title: this.task
@@ -39,7 +33,7 @@ export default {
         })
         const res = await req.json()
         this.task = null
-        this.getTasks()
+        // this.getTasks()
         location.reload()
         console.log(res)
       } else {
