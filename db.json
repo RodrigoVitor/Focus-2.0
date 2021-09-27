@@ -2,15 +2,15 @@
   "tasks": [],
   "gifts": [
     {
-      "id": 1,
-      "name": "1d folga"
+      "name": "Serie(1)",
+      "id": 1
     },
     {
-      "id": 2,
-      "name": "Serie"
+      "name": "Serie(1)",
+      "id": 2
     }
   ],
   "myxp": {
-    "xp": 10
+    "xp": 40
   }
 }
