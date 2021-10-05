@@ -1,24 +1,7 @@
 {
   "tasks": [],
-  "gifts": [
-    {
-      "name": "Serie(1)",
-      "id": 1
-    },
-    {
-      "name": "Serie(1)",
-      "id": 2
-    },
-    {
-      "name": "Serie(1)",
-      "id": 3
-    },
-    {
-      "name": "Game",
-      "id": 4
-    }
-  ],
+  "gifts": [],
   "myxp": {
-    "xp": 5
+    "xp": 0
   }
 }
