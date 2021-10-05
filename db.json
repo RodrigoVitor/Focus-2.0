@@ -8,9 +8,17 @@
     {
       "name": "Serie(1)",
       "id": 2
+    },
+    {
+      "name": "Serie(1)",
+      "id": 3
+    },
+    {
+      "name": "Game",
+      "id": 4
     }
   ],
   "myxp": {
-    "xp": 40
+    "xp": 5
   }
 }

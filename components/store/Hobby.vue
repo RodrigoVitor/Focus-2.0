@@ -1,10 +1,10 @@
 <template>
   <div class="container mt-5">
-    <h1 class="text-center">S T O R E</h1>
+    <h1 class="text-center"> S T O R E </h1>
     <p v-if="msg !== ''">{{ msg }}</p>
     <b-container class="bv-example-row">
       <b-row>
-        <b-col cols="6" class="mt-5 border" v-for="gift in store" :key="gift.id">
+        <b-col v-for="gift in store" :key="gift.id" cols="6"  class="mt-5 border">
           <h1 class="text-center">{{ gift.name }}</h1>
           <p class="text-center">{{ gift.value }}xp</p>
           <div class="text-center">
