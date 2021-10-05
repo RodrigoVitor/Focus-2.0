@@ -1,6 +1,6 @@
 <template>
     <div>
-        <!-- <Navbar /> -->
+        <Navbar />
         <Insert />
         <List />
     </div>

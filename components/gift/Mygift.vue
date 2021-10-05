@@ -1,13 +1,13 @@
 <template>
   <div>
-    <!-- <Navbar /> -->
+    <Navbar />
     <h1 class="mt-5 text-center">G I F T</h1>
     <b-row class="mt-5 border" v-for="gift in gifts" :key="gift.id">
       <b-col>
         <h2 class="text-center">{{ gift.name }}</h2>
       </b-col>
       <b-col>
-        <b-button variant="primary">Usado</b-button>
+        <b-button variant="primary" @click="deleteGift(gift.id)">Usado</b-button>
       </b-col>
     </b-row>
   </div>
@@ -25,6 +25,14 @@ export default {
       const req = await fetch('http://localhost:3004/gifts')
       const data = await req.json()
       this.gifts = data
+    },
+    async deleteGift (id) {
+      const req = await fetch(`http://localhost:3004/gifts/${id}`, {
+        method: 'DELETE'
+      })
+      const res = req.json()
+      location.reload()
+      return res
     }
   },
   mounted () {
